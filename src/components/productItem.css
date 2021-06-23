@@ -1,0 +1,136 @@
+.wrapper {
+  margin-top: 90px;
+}
+.home_header {
+  display: flex;
+  justify-content: center;
+}
+
+.productItem {
+  width: 550px;
+  height: 200px;
+  position: relative;
+  border: 1px black solid;
+  margin: auto;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px #888888;
+}
+.product_title {
+  position: absolute;
+  top: 0;
+  font-size: 1rem;
+  text-align: center;
+  color: rgb(68, 61, 61);
+}
+.product_image {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  top: 2.7rem;
+  left: 7px;
+}
+button {
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+  width: 7rem;
+}
+button:hover,
+button:active {
+  background-color: black;
+  color: white;
+}
+.cartitem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-top: 0.5rem;
+  width: 700px;
+  height: 3rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  position: relative;
+}
+.cartitem h1 {
+  font-size: 0.7rem;
+  font-weight: 200;
+  text-align: right;
+  padding: 5px;
+}
+.cartitem p {
+  position: absolute;
+  left: 30rem;
+}
+
+.cartitem button {
+  color: red;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+.cart_title {
+  text-align: center;
+  font-size: 0.7rem;
+}
+@media (max-width: 600px) {
+  .productItem {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    border: 1px black solid;
+    margin: auto;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px #888888;
+  }
+  .product_image {
+    width: 80px;
+    height: 100px;
+    position: absolute;
+    top: 4rem;
+    left: 7px;
+  }
+  .cartitem {
+    display: block;
+    position: relative;
+    margin-top: 0.5rem;
+    width: 300px;
+    height: 3.5rem;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+  .cartitem h1 {
+    font-size: 0.7rem;
+    font-weight: 200;
+    text-align: left;
+    padding: 5px;
+    margin: 0;
+  }
+  .cartitem p {
+    position: absolute;
+    top: 1.1rem;
+    left: 1rem;
+  }
+  .cartitem button {
+    position: absolute;
+    top: 2rem;
+    left: 14rem;
+    color: red;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 50px;
+  }
+}
