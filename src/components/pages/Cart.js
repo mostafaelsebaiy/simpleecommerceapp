@@ -30,7 +30,7 @@ const Cart = () => {
         <div>
           <div className='cart_title'>
             <h1>Your Cart</h1>
-            <h1>total price:$ {totalPTice.toFixed(2)} </h1>
+            <h1>total price:${totalPTice.toFixed(2)} </h1>
             {message ? (
               <h1 style={{ color: 'green' }}>{message}</h1>
             ) : (
